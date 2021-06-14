@@ -1,0 +1,95 @@
+// BASE
+// ----------------------------------------
+//
+body {
+  font-family: "Arial", sans-serif;
+}
+
+h1, 
+h2, 
+h3, 
+h4,
+h5,
+h6 {
+  color: color(neutral, 1);
+  font-family: font-family(heading);
+  font-weight: font-weight(bold);
+}
+
+h1 {
+  @include font-size(h1, desktop);
+
+  @include breakpoint-down(mobile) {
+    @include font-size(h1, mobile);
+  }
+}
+
+h2 {
+  @include font-size(h2, desktop);
+
+  @include breakpoint-down(mobile) {
+    @include font-size(h2, mobile);
+  }
+}
+
+h3 {
+  @include font-size(h3, desktop);
+
+  @include breakpoint-down(mobile) {
+    @include font-size(h3, mobile);
+  }
+}
+
+h4 {
+  @include font-size(h4, desktop);
+
+  @include breakpoint-down(mobile) {
+    @include font-size(h4, mobile);
+  }
+}
+
+h5 {
+  @include font-size(h5, desktop);
+
+  @include breakpoint-down(mobile) {
+    @include font-size(h5, mobile);
+  }
+}
+
+h6 {
+  @include font-size(h6, desktop);
+
+  @include breakpoint-down(mobile) {
+    @include font-size(h6, mobile);
+  }
+}
+
+p {
+  color: color(neutral, 1);
+  font-family: font-family(body);
+  font-weight: font-weight(regular);
+}
+
+a {
+  color: color(neutral, 1);
+}
+
+
+
+// COMPONENTS
+// ----------------------------------------
+// 
+.btn {
+  color: color(neutral, 1);
+  font-family: font-family(button);
+  font-size: font-size(t-r, desktop);
+  font-weight: font-weight(bold);
+}
+
+.subheading {
+  @include font-size(t-r, desktop);
+
+  @include breakpoint-down(mobile) {
+    @include font-size(t-r, mobile);
+  }
+}

@@ -1,0 +1,61 @@
+// COLORS
+// ----------------------------------------
+// Usage - `color: color(primary, 1);`
+@function color($elem, $variant) {
+	@return map-get(map-get($color, $elem), $variant);
+}
+
+
+
+// FONT-SIZE
+// ----------------------------------------
+// Used @mixins $font-size
+// Usage - `font-size: font-size(h1, desktop);`
+//
+@function font-size($size, $elem) {
+	@return nth(map-get(map-get($font-sizes, $elem), $size), 1);
+}
+
+// LINE-HEIGHT
+// ----------------------------------------
+// Used @mixins $font-size
+// Usage - `line-height: line-height(h1, desktop);`
+//
+@function line-height($size, $elem) {
+	@return nth(map-get(map-get($font-sizes, $elem), $size), 2);
+}
+
+// LETTER-SPACING
+// ----------------------------------------
+// Used @mixins $font-size
+// Usage - `letter-spacing: letter-spacing(h1, desktop);`
+//
+@function letter-spacing($size, $elem) {
+	@return nth(map-get(map-get($font-sizes, $elem), $size), 3);
+}
+
+// FONT-FAMILY
+// ----------------------------------------
+// Usage - `font-family: font-family(heading);`
+//
+@function font-family($elem) {
+	@return unquote(map-get($font-family, $elem));
+}
+
+// FONT-WEIGHT
+// ----------------------------------------
+// Usage - `font-family: font-family(bold);`
+//
+@function font-weight($elem) {
+	@return map-get($font-weight, $elem);
+}
+
+
+
+// TRANSITION
+// ----------------------------------------
+// Usage - `transition: transition(text);`
+//
+@function transition($elem) {
+	@return unquote(map-get($transition, $elem));
+}

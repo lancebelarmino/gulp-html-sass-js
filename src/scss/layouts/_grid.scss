@@ -1,0 +1,14 @@
+.container {
+  width: 1252px;
+  margin: 0 auto;
+
+  @include breakpoint-down(tablet-wide) {
+    max-width: 100%;
+    padding: 0 2.5rem;
+  }
+
+  @include breakpoint-down(mobile) {
+    max-width: 100%;
+    padding: 0 1.25rem;
+  }
+}

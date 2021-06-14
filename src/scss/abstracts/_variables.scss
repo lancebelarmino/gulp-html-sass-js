@@ -1,0 +1,73 @@
+// COLOR
+// ----------------------------------------
+//
+$color: (
+	primary: (
+		1: hsl(250, 100%, 50%)
+ 	),
+  accent: (
+    1: hsl(0, 100%, 50%)
+  ),
+  neutral: (
+    1: hsl(0, 0%, 0%),
+		2: hsl(0, 0%, 100%)
+  )
+);
+
+
+
+// FONT-FAMILY
+// ----------------------------------------
+//
+$font-family: (
+	heading:    '"Arial", sans-serif',  // H1 - H6
+  subheading: '"Arial", sans-serif',  // .subheading
+  body:       '"Arial", sans-serif' , // .features-text, etc.
+  button:     '"Arial", sans-serif'   // .btn
+);
+
+// FONT-SIZES
+// ----------------------------------------
+//
+$font-sizes: (
+  desktop: (
+    h1:   ( 4.5rem, 5.125rem, 0 ),  // H1
+    h2:   ( 3.25rem, 3.875rem, 0 ), // H2
+    h3:   ( 2.25rem, 2.75rem, 0 ),  // H3
+    h4:   ( 1.5rem, 2rem, 0 ),      // H4
+    h5:   ( 1.25rem, 1.75rem, 0 ),  // H5
+    h6:   ( 1rem, 1.5rem, 0 ),      // H6
+    t-s:  ( .875rem, 1.25rem, 0 ),  // Text Small
+    t-r:  ( 1rem, 1.5rem, 0 ),      // Text Regular
+    t-l:  ( 1.25rem, 2rem, 0 )      // Text Large
+  ),
+  mobile: (
+    h1:   ( 4.5rem, 5.125rem, 0 ),  // H1
+    h2:   ( 3.25rem, 3.875rem, 0 ), // H2
+    h3:   ( 2.25rem, 2.75rem, 0 ),  // H3
+    h4:   ( 1.5rem, 2rem, 0 ),      // H4
+    h5:   ( 1.25rem, 1.75rem, 0 ),  // H5
+    h6:   ( 1rem, 1.5rem, 0 ),      // H6
+    t-s:  ( .875rem, 1.25rem, 0 ),  // Text Small
+    t-r:  ( 1rem, 1.5rem, 0 ),      // Text Regular
+    t-l:  ( 1.25rem, 2rem, 0 )      // Text Large
+  )
+);
+
+// FONT-WEIGHT
+// ----------------------------------------
+//
+$font-weight: (
+  regular: 400,
+  bold:    700
+);
+
+
+
+// TRANSITIONS
+// ----------------------------------------
+//
+$transition: (
+  text:   'color 200ms ease',
+  button: 'all 400ms ease'
+)

@@ -1,0 +1,53 @@
+// FONT-SIZE, LINE-HEIGHT, LETTER-SPACING
+// ----------------------------------------
+// Usage -  `@include font-size(1, mobile)`
+//
+@mixin font-size($size, $elem, $font-size: true, $line-height: true, $letter-spacing: false, $adjust-font-size: 0) {
+	@if ( $font-size != false ) {
+		font-size: font-size($size, $elem) + $adjust-font-size;
+	}
+	@if ( $line-height == true ) {
+		line-height: line-height($size, $elem);
+	}
+	@if ( $letter-spacing == true ) {
+		letter-spacing: letter-spacing($size, $elem);
+	}
+}
+
+
+
+// BREAKPOINTS MIN
+// ----------------------------------------
+// Usage - `@include breakpoint-up(desktop)`
+//
+$breakpoints-up: (
+    "mobile":       "320px",
+    "tablet":       "768px",
+    "tablet-wide":  "1024px",
+    "desktop":      "1366px",
+    "desktop-wide": "1720px"
+);
+
+@mixin breakpoint-up($size) {
+    @media (min-width: map-get($breakpoints-up, $size)) {
+        @content;
+    }
+}
+
+// BREAKPOINTS MAX
+// ----------------------------------------
+// Usage - `@include breakpoint-down(tablet)`
+//
+$breakpoints-down: (
+    "desktop-wide": "1920px",
+    "desktop":      "1719px",
+    "tablet-wide":  "1365px",
+    "tablet":       "1023px",
+    "mobile":       "767px"
+);
+
+@mixin breakpoint-down($size) {
+    @media (max-width: map-get($breakpoints-down, $size)) {
+        @content;
+    }
+}

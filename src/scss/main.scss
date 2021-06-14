@@ -1,10 +1,10 @@
 /* --- MAIN SCSS FILE --- */
 
 /*** ABSTRACTS ***/
-@import "abstracts/functions",
+@import "abstracts/variables",
+        "abstracts/functions",
         "abstracts/mixins",
-        "abstracts/placeholders",
-        "abstracts/variables";
+        "abstracts/placeholders";
 
 /*** BASE ***/
 @import "base/resets",
@@ -17,16 +17,18 @@
         "components/dropdown";
 
 /*** LAYOUTS ***/
-@import "layouts/footer",
-        "layouts/forms",
+@import "layouts/main",
         "layouts/grid",
-        "layouts/header",
         "layouts/navigation",
-        "layouts/sidebar";
+        "layouts/header",
+        "layouts/footer",
+        "layouts/sidebar",
+        "layouts/forms",
+        "layouts/testimonials";
 
 /*** PAGES ***/
-@import "pages/contact",
-        "pages/home";
+@import "pages/home",
+        "pages/contact";
 
 /*** THEMES ***/
 @import "themes/admin",
