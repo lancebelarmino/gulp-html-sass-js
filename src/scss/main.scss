@@ -1,39 +1,69 @@
-/* --- MAIN SCSS FILE --- */
-
-/*** ABSTRACTS ***/
+// ABSTRACTS
+//----------------------------------------
+//
 @import "abstracts/variables",
         "abstracts/functions",
         "abstracts/mixins",
         "abstracts/placeholders";
 
-/*** BASE ***/
+
+
+// VENDORS
+//----------------------------------------
+//
+@import "vendors/vendors-dir";
+
+
+
+// VENDORS EXTENSION
+//----------------------------------------
+//
+@import "vendors-extension/bootstrap",
+        "vendors-extension/jquery-ui";
+
+
+
+// BASE
+//----------------------------------------
+//
 @import "base/resets",
         "base/typography";
 
-/*** COMPONENTS ***/
+
+
+// COMPONENTS
+//----------------------------------------
+//
 @import "components/buttons",
         "components/carousel",
         "components/cover",
         "components/dropdown";
 
-/*** LAYOUTS ***/
+
+
+// LAYOUTS
+//----------------------------------------
+//
 @import "layouts/main",
         "layouts/grid",
         "layouts/navigation",
+        "layouts/forms",
         "layouts/header",
         "layouts/footer",
         "layouts/sidebar",
-        "layouts/forms",
         "layouts/testimonials";
 
-/*** PAGES ***/
+
+
+// PAGES
+//----------------------------------------
+//
 @import "pages/home",
         "pages/contact";
 
-/*** THEMES ***/
-@import "themes/admin",
-        "themes/theme";
 
-/*** VENDORS ***/
-@import "vendors/bootstrap",
-        "vendors/jquery-ui";
+
+// THEMES
+//----------------------------------------
+//
+@import "themes/default";
