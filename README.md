@@ -16,7 +16,7 @@ Run default Gulp task.
 
 ## Features
 
-* Compile HTML, SCSS, Javascript files into /dist
+* Compile HTML, SCSS, Javascript files in /dist
 * Minify SCSS and Javascript
 * Autoprefixer
 * Live server using Browsersync
