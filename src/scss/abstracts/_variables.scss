@@ -14,6 +14,17 @@ $color: (
   )
 );
 
+// LINEAR-GRADIENT
+// ----------------------------------------
+//
+$gradient: (
+  alpha:  'linear-gradient(90deg, rgba(246, 213, 247, 0.5) 16.93%, rgba(251, 233, 215, 0.5) 81.25%)',
+  beta:   'linear-gradient(270deg, rgba(177, 193, 217, 0.5) -11.21%, rgba(224, 229, 230, 0.5) 70.62%)',
+  gamma:  'linear-gradient(246.92deg, rgba(181, 151, 246, 0.28) 35.53%, rgba(150, 198, 234, 0.56) 81.69%)',
+  delta:  'linear-gradient(126deg, rgba(235, 244, 245, 0.24) 19.03%, rgba(181, 198, 224, 0.24) 69.93%), #FFFFFF'
+);
+
+
 
 
 // FONT-FAMILY

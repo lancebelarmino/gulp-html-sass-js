@@ -1,7 +1,6 @@
 {
   "name": "gulp-html-sass",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,5 +22,14 @@
   },
   "browserslist": [
     "last 2 versions"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lancebelarmino/gulp-scss-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lancebelarmino/gulp-scss-boilerplate/issues"
+  },
+  "homepage": "https://github.com/lancebelarmino/gulp-scss-boilerplate#readme",
+  "description": ""
 }
